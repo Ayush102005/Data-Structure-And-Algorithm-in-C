@@ -38,7 +38,8 @@ void display(struct Day *calender,int size)
 
 int main(){
     int size;
-    printf("Enter the number of days in the week: ");
+    printf("Ayush Kumar Singh\nUSN-1AY23CS048");
+    printf("\nEnter the number of days in the week: ");
     scanf("%d",&size);
     struct Day *calender=(struct Day*)malloc(sizeof(struct Day)*size);
     if (calender==NULL){
