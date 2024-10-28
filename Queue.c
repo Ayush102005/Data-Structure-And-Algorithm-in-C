@@ -26,7 +26,7 @@ int dequeue()
         printf("Underflow");
     }
     else{
-        printf("%d",queue[front]);
+        printf("Dequeue: %d",queue[front]);
         front++;
         if(front>rear)
         {
@@ -37,7 +37,7 @@ int dequeue()
 }
 void display(){
     printf("\nThe Elements of the Queue Are: ");
-    for(int i=front;i<=rear;i++)
+    for(int i=0;i<=MAX-1;i++)
     printf("%d\n",queue[i]);
 }
 int main(){
@@ -46,7 +46,9 @@ int main(){
     enqueue(12);
     enqueue(45);
     enqueue(54);
+    display();
     dequeue();
     display();
+
 
 }

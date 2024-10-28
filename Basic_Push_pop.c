@@ -12,7 +12,7 @@ void push()
     else
     {
       printf("enter data\n");
-      scanf("%d",&stack[top]);
+      scanf("%d\n",&stack[top]);
 
     }
 }
@@ -23,7 +23,7 @@ void pop()
         printf("underflow");
     }
     else{
-        printf("%d",stack[top]);
+        printf("%d\n",stack[top]);
         top--;
     }
 }
